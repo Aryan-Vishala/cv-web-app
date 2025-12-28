@@ -30,45 +30,78 @@ with col1:
         st.info("Add profile.jpg to frontend folder")
 
 with col2:
-    st.title(cv["name"])
-    st.write(cv["location"])
-    st.write(f"📞 {cv['phone']}")
-    st.write(f"📧 {cv['email']}")
-    st.markdown(f"[LinkedIn]({cv['linkedin']})")
+    st.title("Aryan Vishala")
+    st.write("Modinagar / Haridwar, India")
+    st.write("📞 9690107160")
+    st.write("📧 aryanvishala@gmail.com")
+    st.markdown("[LinkedIn](https://www.linkedin.com/in/aryan-vishala)")
 
 st.markdown("---")
 
-# Education
+st.header("🎯 Professional Summary")
+st.write(
+    "Highly motivated Computer Science undergraduate with a strong academic background "
+    "and hands-on experience in building real-world web applications. Proficient in Flask "
+    "and Streamlit, with a growing interest in backend development, problem-solving, and "
+    "core Machine Learning concepts. Known for leadership, communication skills, and "
+    "consistent academic performance."
+)
+
 st.header("🎓 Education")
-for edu in cv["education"]:
-    st.subheader(edu["degree"])
-    st.write(edu["institute"])
-    if "year" in edu:
-        st.write(f"📅 {edu['year']}")
-    if "score" in edu:
-        st.write(f"📊 Score: {edu['score']}")
 
-# Skills
+st.subheader("B.Tech in Computer Science & Engineering (2024–2028)")
+st.write("Gurukul Kangri Vishwavidyalaya, Haridwar")
+st.write("📊 CGPA: **9.4**")
+
+st.subheader("Class XII – CBSE (2023)")
+st.write("Dayawati Modi Public School, Modinagar")
+st.write("📊 Score: **93%**")
+
+st.subheader("Class X – CBSE (2021)")
+st.write("Summer Field Public School, Modinagar")
+st.write("📊 Score: **94%**")
+
 st.header("💻 Technical Skills")
-st.write("**Programming:**", ", ".join(cv["skills"]["programming"]))
-st.write("**Frameworks:**", ", ".join(cv["skills"]["frameworks"]))
-st.write("**Data:**", ", ".join(cv["skills"]["data"]))
-st.write("**ML:**", ", ".join(cv["skills"]["ml"]))
+st.write("**Programming & Web:** Python, HTML, CSS, JavaScript")
+st.write("**Frameworks & Tools:** Flask, Streamlit")
+st.write("**Version Control:** Git, GitHub")
+st.write("**Data & ML Foundations:** NumPy, Pandas, Matplotlib, Seaborn, EDA, Feature Engineering")
+st.write("**Currently Learning:** Core Machine Learning concepts")
 
-# Achievements
-st.header("🏆 Achievements")
-for a in cv["achievements"]:
-    st.write(f"• {a}")
+st.header("🧩 DSA Problem Solving")
+st.write(
+    "• Solved **51+ problems on LeetCode** – "
+    "[Profile](https://leetcode.com/u/Aryan_Vishala/)"
+)
+st.write(
+    "• Solved **99+ problems on GeeksforGeeks** – "
+    "[Profile](https://www.geeksforgeeks.org/profile/aryanvi341r)"
+)
 
-# Leadership
-st.header("🧠 Leadership")
-st.write(cv["leadership"])
+st.header("🛠️ Projects")
+st.write(
+    "**CV Web Application (Flask + Streamlit)**  \n"
+    "Built a full-stack CV web application using Flask as a REST API backend "
+    "and Streamlit as a frontend UI. The project demonstrates clean separation "
+    "of backend and frontend with dynamic rendering of resume data."
+)
+st.markdown(
+    "🔗 GitHub Repository: "
+    "[cv-web-app](https://github.com/Aryan-Vishala/cv-web-app.git)"
+)
 
-# Activities
-st.header("🎤 Extra-Curricular Activities")
-for act in cv["activities"]:
-    st.write(f"• {act}")
+
+st.header("🧠 Leadership & Communication Skills")
+st.write(
+    "• Served as **Senior Prefect** in Class XII, demonstrating leadership, "
+    "responsibility, and team coordination skills."
+)
+st.write(
+    "• Strong communication and public speaking skills with multiple **1st and 2nd "
+    "position awards** in debates and speech competitions."
+)
 
 st.markdown("---")
-st.caption("References available upon request")
+st.caption("Made by Aryan. :)")
+
 
